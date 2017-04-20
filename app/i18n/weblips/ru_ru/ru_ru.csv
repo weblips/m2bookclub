@@ -1,0 +1,45 @@
+State/Province,Область,module,Magento_Braintree
+State/Province,Область,module,Magento_Sales
+State/Province,Область,module,Magento_Checkout
+State/Province,Область,module,Magento_Customer
+State/Province,Область,module,Magento_Directory
+"Shipping State/Province","Область доставки",module,Magento_SalesRule
+"Please select State/Province.","Пожалуйста, выберите область.",module,Magento_Ui
+"You subscribe to ""General Subscription"".","Вы подписаны на ""Общую Рассылку"".",module,Magento_Customer
+Blog,Блог,module,Magento_Customer
+Description,Описание,module,Magento_Catalog
+"Search posts here...","Поиск по постам...",module,Magefan_Blog
+"Recent Posts","Последние посты",module,Magefan_Blog
+"Archive","Архив",module,Magefan_Blog
+"January","Январь",module,Magefan_Blog
+"February","Февраль",module,Magefan_Blog
+"March","Март",module,Magefan_Blog
+"April","Апрель",module,Magefan_Blog
+"May","Май",module,Magefan_Blog
+"June","Июнь",module,Magefan_Blog
+"July","Июль",module,Magefan_Blog
+"August","Август",module,Magefan_Blog
+"September","Сентябрь",module,Magefan_Blog
+"October","Октябрь",module,Magefan_Blog
+"November","Ноябрь",module,Magefan_Blog
+"December","Декабрь",module,Magefan_Blog
+"Posted:","Опубликовано:",module,Magefan_Blog
+"Categories:","Категории:",module,Magefan_Blog
+"Read more","Читать далее",module,Magefan_Blog
+"Monthly Archives: %s %s","Архив за месяц: %s %s",module,Magefan_Blog
+"Go to Checkout","Перейти к покупке",module,Magento_Checkout
+"View and edit cart","Перейти в корзину",module,Magento_Checkout
+"Adding...","Добавляю...",module,Magento_Checkout
+"More Choices:","Вас может заинтересовать",module,Magento_Checkout
+"Create an Account","Зарегистрироваться",module,Magento_Customer
+"We are in social networks:","Мы в социальных сетях:",module,Magento_Theme
+"Name","Имя",module,Magento_SendFriend
+"Message","Комментарий",module,Magento_SendFriend
+"Next Product","Следующий товар",module,Magento_Catalog
+"Advanced Search","Расширенный поиск",module,Magento_CatalogSearch
+"What’s on your mind?","Ваш вопрос или предложение",module,Magento_Contact
+"Phone Number","Номер телефона",module,Magento_Contact
+"Estimated Total","Итого:",module,Magento_Checkout
+"Summary","Тема",module,Magento_Review
+"Name","Тема письма",module,Magento_Contact
+"Please enter a valid email address (Ex: johndoe@domain.com).","Введите корректный email (Пр: johndoe@domain.com)"

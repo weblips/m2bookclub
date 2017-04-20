@@ -1,0 +1,14 @@
+{
+    "name": "weblips/language-ru_ru",
+    "description": "Russian language",
+    "version": "1.0.0",
+    "require": {
+        "magento/framework": "100.0.*"
+    },
+    "type": "magento2-language",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}
