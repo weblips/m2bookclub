@@ -43,3 +43,4 @@ Description,Описание,module,Magento_Catalog
 "Summary","Тема",module,Magento_Review
 "Name","Тема письма",module,Magento_Contact
 "Please enter a valid email address (Ex: johndoe@domain.com).","Введите корректный email (Пр:johndoe@domain.com)"
+"Home page","Главная страница"
