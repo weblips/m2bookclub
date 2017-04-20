@@ -1,0 +1,17 @@
+<div class="weblips-core-page-title">
+    <?= $block->sayAdminPanel() ?>
+</div>
+<div class="weblips-core-main-content">
+    <p class="weblips-core-title-cat">Доступные категории:</p>
+    <ul>
+    <?php 
+        $array_cat = $block->getCategoris();
+        foreach ($array_cat as $value) :
+    ?>
+        <li>
+            <?=$value ?>
+        </li>
+        <hr>
+    <?php endforeach; ?>
+    </ul> 
+</div>

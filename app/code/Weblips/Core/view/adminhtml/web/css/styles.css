@@ -1,0 +1,13 @@
+.page-title{color: white}
+.weblips-core-page-title {color: red; font-size: 30px; text-decoration: saddlebrown}
+.weblips-core-page-title:before{content: '\f02d';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    margin-left:5px;
+    color:red; }
+.page-footer{display: none}
+.weblips-core-title-cat{font-size: 20px; color: grey; text-decoration: underline}
+.weblips-core-title-cat:hover{ color: #0000ff; cursor: pointer}
+.weblips-core-main-content{background: grey no-repeat}

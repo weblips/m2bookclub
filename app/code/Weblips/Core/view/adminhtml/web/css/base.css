@@ -1,0 +1,16 @@
+.admin__menu #menu-weblips-core-menu > a:before  {
+	opacity: 0.65;
+	content: '';
+    font-size: 2.4rem;
+    display: block;
+    position: relative;
+    top: -0.3rem;
+    width: 28px;
+    height: 23px;
+    background: url(../images/duck.png);
+    background-size: 28px 23px;
+    /*background-size: 28px 23px; default size for icon in menu*/
+    margin: 0 auto;
+}
+
+.admin__menu #menu-weblips-core-menu:hover > a:before {opacity: 1;}

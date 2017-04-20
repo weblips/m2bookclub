@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+            <add id="Weblips_Core::menu"
+                title="BookClub Menu" 
+                translate="title"
+                module="Weblips_Core" 
+                sortOrder="10"
+                resource="Weblips_Core::menu" /> 
+            <add id="Weblips_Core::main"
+                title="Main Menu"
+                translate="title"
+                module="Weblips_Core"
+                sortOrder="0"
+                action="bookclubmenu/index/index"
+                parent="Weblips_Core::menu"
+                resource="Weblips_Core::main" />
+    </menu>
+</config>
