@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+    	<add id="Ibnab_Common::ibnabrightmenu" title="Ibnab" module="Ibnab_Common" sortOrder="11" resource="Ibnab_Common::ibnabrightmenu"/>
+
+    </menu>
+</config>

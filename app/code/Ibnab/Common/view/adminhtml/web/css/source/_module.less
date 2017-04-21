@@ -1,0 +1,16 @@
+@ibnab-icons-admin__font-name-path: '@{baseDir}fonts/Ibnab/icomoon';
+@ibnab-icons-admin__font-name : 'Ibnab';
+.lib-font-face(
+    @family-name:@ibnab-icons-admin__font-name,
+    @font-path: @ibnab-icons-admin__font-name-path,
+    @font-weight: normal,
+    @font-style: normal
+);
+.admin__menu .item-ibnabrightmenu.parent.level-0 > a:before {
+    font-family: @ibnab-icons-admin__font-name;
+    content: "\e800";
+}
+.admin__data-grid-toolbar .admin__data-grid-import {
+    float: right;
+     margin-left: 30px;
+}

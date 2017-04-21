@@ -1,0 +1,84 @@
+<?php $importUrl = $block->getImportFrom();$url =  $block->getUrl($importUrl[0]).'?'.'entity='.$importUrl[1]; ?>
+
+<?php if(!$block->getAjax()):?>
+<div class="admin__data-grid-import" data-bind="scope: 'showPopupImport'">
+<?php echo ''//$block->getExportButtonHtml() ?>
+<button id="<?php /* @escapeNotVerified */ echo $block->getId() ?>_import" class="action-default scalable task" data-ui-id="widget-button-0" type="button" title="<?php /* @escapeNotVerified */ echo __('Import') ?>" data-action="choose"
+                        data-bind="click: open" >
+<span> <?php /* @escapeNotVerified */ echo __('Import') ?></span>
+</button>
+</div>
+
+
+
+        <!-- import popup -->
+        <div id="import-popup">
+            <div class="admin__data-grid-outer-wrap" data-bind="scope: 'OnclickShowImportPopup'">
+                <!-- ko template: getTemplate() --><!-- /ko -->
+
+            </div>
+        </div>
+<div id="block-component-import">
+<script type="text/x-magento-init">
+    {
+        "#import-popup": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "showPopupImport": {
+                        "component": "Ibnab_Common/js/import",
+                        "statisticUrl": "<?php echo $block->getUrl($importUrl[0]).'?'.'entity='.$importUrl[1]  ?>",
+                        "btnTrigger":"#null"
+                    }
+                }
+            }
+        }
+    }
+</script>
+</div>
+<?php else: ?>
+<script>
+    
+require([
+  'jquery',
+  'mage/apply/main'
+], function ($,mage) {
+     $( document ).ready(function() {
+        $(".modal-slide").eq(1).remove();
+
+      });
+});
+</script>
+<div class="admin__data-grid-import"  data-bind="scope: 'showPopupImport'">
+<?php echo ''//$block->getExportButtonHtml() ?>
+<button  id="<?php /* @escapeNotVerified */ echo $block->getId() ?>_import" class="action-default scalable task" data-ui-id="widget-button-0" type="button" title="<?php /* @escapeNotVerified */ echo __('Import') ?>" data-action="choose"
+                        data-bind="click: open" >
+<span> <?php /* @escapeNotVerified */ echo __('Import') ?></span>
+</button>
+</div>
+
+
+
+        <!-- import popup -->
+        <div id="import-popup" data-mage-init='{"Magento_Ui/js/core/app":{"components":{"showPopupImport":{"component":"Ibnab_Common/js/import","statisticUrl":"<?php echo $url ?>","btnTrigger":"#<?php echo $block->getId() ?>_import"}}}}'>
+            <div class="admin__data-grid-outer-wrap" data-bind="scope: 'OnclickShowImportPopup'">
+                <!-- ko template: getTemplate() --><!-- /ko -->
+
+            </div>
+        </div>
+
+<?php endif; ?>
+<script>
+    
+    require([
+        'jquery'
+    ], function ($) {
+        $(".admin__data-grid-import").detach().appendTo('.admin__data-grid-export');
+        $("#block-component-import").detach().appendTo('.page-footer');
+         /*
+         $("#<?php echo $block->getId() ?>_import").on( "click", function() {
+
+         });
+         */          
+        
+    });
+</script>

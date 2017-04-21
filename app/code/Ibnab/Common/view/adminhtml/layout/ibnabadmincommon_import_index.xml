@@ -1,0 +1,7 @@
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/layout_generic.xsd">
+    <container name="root" label="Root">
+            <block class="Ibnab\Common\Block\Adminhtml\Import\Edit\Before" template="Ibnab_Common::import/form/before.phtml" name="import.form.before" as="form_before"/>
+            <block class="Ibnab\Common\Block\Adminhtml\Import\Edit" name="import.form.container"/>
+            <block class="Ibnab\Common\Block\Adminhtml\Form\After" template="Ibnab_Common::import/form/after.phtml" name="import.form.after" as="form_after"/>
+    </container>
+</layout>

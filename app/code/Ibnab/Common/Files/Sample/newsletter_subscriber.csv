@@ -1,0 +1,4 @@
+store_id,subscriber_email,subscriber_status,customer_id
+1,contact@ibnab.com,1,1
+2,support@ibnab.com,1,0
+0,sales@ibnab.com,1,0
