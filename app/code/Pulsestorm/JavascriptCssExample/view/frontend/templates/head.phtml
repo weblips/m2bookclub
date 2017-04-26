@@ -1,0 +1,7 @@
+<?php
+    $asset_repository = $this->assetRepository;
+    $asset  = $asset_repository->createAsset('Pulsestorm_JavascriptCssExample::test.js');
+    $url    = $asset->getUrl();
+?>
+<!-- Hello There -->
+<script src="<?php echo $url; ?>"></script>

@@ -1,0 +1,4 @@
+        $object->setUpdatedAt($this->{{_}}date->date());
+        if ($object->isObjectNew()) {
+            $object->setCreatedAt($this->{{_}}date->date());
+        }

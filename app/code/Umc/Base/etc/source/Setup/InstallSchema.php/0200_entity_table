@@ -1,0 +1,45 @@
+        if (!$installer->tableExists('{{namespace}}_{{module}}_{{entity}}')) {
+            $table = $installer->getConnection()->newTable(
+                $installer->getTable('{{namespace}}_{{module}}_{{entity}}')
+            )
+            ->addColumn(
+                '{{entity}}_id',
+                {{class Magento\Framework\DB\Ddl\Table}}::TYPE_INTEGER,
+                null,
+                [
+                    'identity' => true,
+                    'nullable' => false,
+                    'primary'  => true,
+                    'unsigned' => true,
+                ],
+                '{{EntityLabel}} ID'
+            )
+{{columnsSetup}}
+            ->addColumn(
+                'created_at',
+                {{class Magento\Framework\DB\Ddl\Table}}::TYPE_TIMESTAMP,
+                null,
+                [],
+                '{{EntityLabel}} Created At'
+            )
+            ->addColumn(
+                'updated_at',
+                {{class Magento\Framework\DB\Ddl\Table}}::TYPE_TIMESTAMP,
+                null,
+                [],
+                '{{EntityLabel}} Updated At'
+            )
+            ->setComment('{{EntityLabel}} Table');
+            $installer->getConnection()->createTable($table);
+
+            $installer->getConnection()->addIndex(
+                $installer->getTable('{{namespace}}_{{module}}_{{entity}}'),
+                $setup->getIdxName(
+                    $installer->getTable('{{namespace}}_{{module}}_{{entity}}'),
+                    [{{fullTextFields}}],
+                    {{class Magento\Framework\DB\Adapter\AdapterInterface}}::INDEX_TYPE_FULLTEXT
+                ),
+                [{{fullTextFields}}],
+                {{class Magento\Framework\DB\Adapter\AdapterInterface}}::INDEX_TYPE_FULLTEXT
+            );
+        }

@@ -1,0 +1,9 @@
+    /**
+     * set page data
+     *
+     * @return $this
+     */
+    protected function {{_}}setPageData()
+    {
+        return $this;
+    }

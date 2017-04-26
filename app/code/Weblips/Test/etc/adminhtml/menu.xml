@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    <add id="Weblips_Test::tester" resource="Weblips_Test::tester" title="Create module" action="test/index/index" module="Weblips_Test" sortOrder="10"/></menu>
+</config>

@@ -1,0 +1,56 @@
+<?php
+/**
+ * Umc_Base extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category  Umc
+ * @package   Umc_Base
+ * @copyright 2015 Marius Strajeru
+ * @license   http://opensource.org/licenses/mit-license.php MIT License
+ * @author    Marius Strajeru <ultimate.module.creator@gmail.com>
+ */
+?>
+<?php /** @var \Umc\Base\Block\Adminhtml\Attribute $this */ ?>
+<?php $_id = $this->getEntityId().'_'.$this->getIncrement();?>
+<?php $_attribute = $this->getAttributeInstance();?>
+<?php if ($this->getIsTemplate()) : ?>
+<script id="attribute-template" type="text/x-magento-template">
+<?php endif;?>
+    <div class="entry-edit umc-attribute" id="attribute_<?php echo $this->getEntityId()?>_<?php echo $this->getIncrement();?>">
+        <div id="attribute-<?php echo $this->getEntityId()?>-<?php echo $this->getIncrement() ?>-wrapper" class="fieldset-wrapper admin__collapsible-block-wrapper opened">
+            <div class="fieldset-wrapper-title">
+                <strong
+                    class="admin__collapsible-title"
+                    data-toggle="collapse"
+                    data-target="#attribute-<?php echo $this->getEntityId()?>-<?php echo $this->getIncrement() ?>-content">
+                    <span class="attribute-title">
+                        <?php echo ($this->getAttributeInstance()) ? $this->getAttributeInstance()->getLabel() : __('Attribute %1', $this->getIncrement());?>
+                    </span>
+                </strong>
+                <div class="actions">
+                    <button type="button" title="<?php echo __('Remove attribute') ?>" class="action-delete remove-attribute">
+                        <span><?php echo __('Remove attribute') ?></span>
+                    </button>
+                </div>
+                <div id="attribute-<?php echo $this->getEntityId()?>-<?php echo $this->getIncrement() ?>-move"
+                     data-role="draggable-handle"
+                     class="draggable-handle"
+                     title="<?php echo __('Sort Attributes'); ?>">
+                 </div>
+            </div>
+            <div id="attribute-<?php echo $this->getEntityId()?>-<?php echo $this->getIncrement() ?>-content" class="fieldset-wrapper-content in collapse">
+                <fieldset class="fieldset">
+                    <?php echo $this->getFormHtml();?>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+<?php if ($this->getIsTemplate()) : ?>
+</script>
+<?php endif;
