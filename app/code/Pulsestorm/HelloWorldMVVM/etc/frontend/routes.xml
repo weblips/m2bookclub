@@ -4,5 +4,9 @@
         <route id="hello_mvvm" frontName="hello_mvvm">
             <module name="Pulsestorm_HelloWorldMVVM" />
         </route>
+        
+        <route id="catalog">
+            <module name="Pulsestorm_HelloWorldMVVM" after="Magento_Catalog"/>
+        </route>
     </router>
 </config>   
